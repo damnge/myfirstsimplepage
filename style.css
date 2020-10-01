@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|Philosopher:700|ZCOOL+XiaoWei&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body, html {
+  color: #444444;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #ecf0f1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.splash {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 24px;
+  margin: 0px;
+  background-image: url(https://i.postimg.cc/5tHbSyRs/new-zealand-topography-from-above-2441454-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+}
+
+.page-intro {
+  margin: auto;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+}
+
+.main-title {
+  margin: 0px;
+  padding: 0 24px;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 75px;
+  font-family: "Philosopher", sans-serif;
+  letter-spacing: 5px;
+  text-shadow: 2px 3px black;
+}
+
+.main-subtitle {
+  margin: 24px 0 60px 0;
+  font-weight: 600;
+  color: white;
+  font-size: 45px;
+  font-family: "Philosopher", sans-serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 3px black;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 18px 24px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  background-color: #5ca1ba;
+  color: white;
+  border-radius: 8px;
+  font-family: "Philosopher", sans-serif;
+  border-color: #5ca1ba;
+}
+
+.btn:hover {
+  background-color: #1c2833;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-color: #1c2833;
+}
+
+.btn:active {
+  -webkit-transform: translate(0, 0.3rem);
+          transform: translate(0, 0.3rem);
+}
+
+.section-title {
+  position: relative;
+  margin: 0 0 60px 0;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#303133), to(transparent));
+  background: linear-gradient(to right, transparent, #303133, transparent);
+  left: 50%;
+  bottom: -5px;
+  margin-left: -50%;
+}
+
+.about {
+  background-color: #cfdae2;
+}
+
+.section-intro {
+  margin: 36px 0 0 0;
+  color: #444444;
+}
+
+.features-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333333%;
+          flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.feature i {
+  width: 100px;
+  height: 100px;
+  line-height: 92px;
+  font-size: 45px;
+  background-color: #fffff;
+  color: #658ba3;
+  border-radius: 50%;
+  border: 5px solid #658ba3;
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Philosopher", sans-serif;
+  letter-spacing: 1px;
+}
+
+.feature-description {
+  margin: 24px 0 0 0;
+  padding: 0 25px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+.statement {
+  background-image: url("https://i.postimg.cc/Pqqf88D5/blue-blur-close-up-crystal-433108.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.statement p {
+  margin: 0;
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-size: 26px;
+  color: white;
+  text-shadow: 2px 3px 2px black;
+}
+
+.quotes {
+  background-color: #cfdae2;
+  padding: 30px 0 60px 0;
+}
+
+.quotes-wrapper {
+  margin: auto;
+  max-width: 980px;
+}
+
+.quotes blockquote {
+  padding: 0 30px;
+  font-size: 19px;
+  text-align: center;
+}
+
+.quotes footer {
+  margin: 30px;
+  text-align: right;
+  font-family: "Philosopher", sans-serif;
+}
+
+.quote {
+  width: 100%;
+  padding: 0 30px;
+}
+
+section.gallery {
+  padding: 60px 0 0 0;
+}
+
+.gallery-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 72px 0 0 0;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.gallery-item:before {
+  position: absolute;
+  display: none;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #202d36;
+  opacity: 0.5;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #ffffff;
+}
+
+.gallery-item:hover:before, .gallery-item:hover figcaption {
+  display: block;
+}
+
+.contact {
+  text-align: center;
+  margin: 25px;
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  border: 1.5px solid #7597ad;
+  width: 65px;
+  height: 65px;
+  line-height: 64px;
+  font-size: 39px;
+  border-radius: 50%;
+  margin: 0 25px 0 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social-links li:hover {
+  background: #7597ad;
+}
+
+.social-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #7597ad;
+}
+
+.social-links li a:hover {
+  color: #ffffff;
+}
+
+.page-footer {
+  padding: 27px 0;
+  background-image: url("//i.postimg.cc/SQdZCYqL/ocean-waves-crashing-on-shore-3607231.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.page-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+.navigation {
+  padding: 8px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2e5d6e), to(#72adc4));
+  background-image: linear-gradient(to right, #2e5d6e, #72adc4);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-right: 65px;
+}
+
+.navigation ul li a {
+  font-size: 19px;
+  font-family: "Philosopher", sans-serif;
+}
+
+.navigation ul li a:hover {
+  color: #333333;
+}
+
+.feature i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.feature i {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.flickity-page-dots .dot {
+  background-color: #557890;
+}
+
+.flickity-button-icon {
+  color: #557890;
+}
+
+@media (max-width: 767px) {
+  .main-title {
+    margin: -30px;
+    font-size: 44px;
+  }
+  .main-subtitle {
+    font-size: 34px;
+  }
+  .section-title {
+    font-size: 25px;
+  }
+  .statement {
+    font-size: 13px;
+  }
+  .body {
+    font-size: 12px;
+  }
+  .features-wrapper {
+    display: block;
+  }
+  .quote {
+    width: 130%;
+    font-size: 10px;
+  }
+  .feature {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  .about {
+    font-size: 13px;
+  }
+  .gallery-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .navigation {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navigation ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navigation ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+    width: 100%;
+  }
+  .navigation ul li a {
+    font-size: 19px;
+    font-family: "Philosopher", sans-serif;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-title:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 300px;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#303133), to(transparent));
+    background: linear-gradient(to right, transparent, #303133, transparent);
+    left: 50%;
+    bottom: -5px;
+    margin-left: -150px;
+  }
+  .btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+  .splash {
+    line-height: 1.6;
+    height: 100%;
+  }
+  .page-footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    margin: 0;
+    min-height: 100vh;
+  }
+  .section-title:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 700px;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#303133), to(transparent));
+    background: linear-gradient(to right, transparent, #303133, transparent);
+    left: 50%;
+    bottom: -5px;
+    margin-left: -350px;
+  }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  blockquote {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
